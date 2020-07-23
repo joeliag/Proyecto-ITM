@@ -66,6 +66,7 @@ Partial Class Form1
         Me.Button1 = New System.Windows.Forms.Button()
         Me.btnModificar = New System.Windows.Forms.Button()
         Me.BtnInsertar = New System.Windows.Forms.Button()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
         CodigoLabel = New System.Windows.Forms.Label()
         NombreLabel = New System.Windows.Forms.Label()
         ApellidoLabel = New System.Windows.Forms.Label()
@@ -503,12 +504,20 @@ Partial Class Form1
         Me.BtnInsertar.Text = "Insertar"
         Me.BtnInsertar.UseVisualStyleBackColor = True
         '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(496, 328)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(100, 26)
+        Me.TextBox1.TabIndex = 153
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.LightSteelBlue
         Me.ClientSize = New System.Drawing.Size(1115, 717)
+        Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.SexoComboBox1)
         Me.Controls.Add(Label1)
@@ -585,4 +594,5 @@ Partial Class Form1
     Friend WithEvents Button1 As Button
     Friend WithEvents btnModificar As Button
     Friend WithEvents BtnInsertar As Button
+    Friend WithEvents TextBox1 As TextBox
 End Class
