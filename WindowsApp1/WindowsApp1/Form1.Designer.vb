@@ -51,7 +51,6 @@ Partial Class Form1
         Me.DNITextBox = New System.Windows.Forms.TextBox()
         Me.IdcarreraTextBox = New System.Windows.Forms.TextBox()
         Me.FecnacDateTimePicker = New System.Windows.Forms.DateTimePicker()
-        Me.SexoTextBox = New System.Windows.Forms.TextBox()
         Me.NumcelTextBox = New System.Windows.Forms.TextBox()
         Me.NumtelTextBox = New System.Windows.Forms.TextBox()
         Me.DireccionTextBox = New System.Windows.Forms.TextBox()
@@ -67,7 +66,6 @@ Partial Class Form1
         Me.btnModificar = New System.Windows.Forms.Button()
         Me.BtnInsertar = New System.Windows.Forms.Button()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Label7 = New System.Windows.Forms.Label()
         CodigoLabel = New System.Windows.Forms.Label()
         NombreLabel = New System.Windows.Forms.Label()
         ApellidoLabel = New System.Windows.Forms.Label()
@@ -289,14 +287,6 @@ Partial Class Form1
         Label5.TabIndex = 133
         Label5.Text = "Sexo"
         '
-        'SexoTextBox
-        '
-        Me.SexoTextBox.Enabled = False
-        Me.SexoTextBox.Location = New System.Drawing.Point(496, 392)
-        Me.SexoTextBox.Name = "SexoTextBox"
-        Me.SexoTextBox.Size = New System.Drawing.Size(200, 26)
-        Me.SexoTextBox.TabIndex = 134
-        '
         'NumcelLabel
         '
         NumcelLabel.AutoSize = True
@@ -512,22 +502,12 @@ Partial Class Form1
         Me.TextBox1.Size = New System.Drawing.Size(100, 26)
         Me.TextBox1.TabIndex = 153
         '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(737, 354)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(57, 20)
-        Me.Label7.TabIndex = 154
-        Me.Label7.Text = "Label7"
-        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.LightSteelBlue
         Me.ClientSize = New System.Drawing.Size(1115, 717)
-        Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.SexoComboBox1)
@@ -544,7 +524,6 @@ Partial Class Form1
         Me.Controls.Add(FecnacLabel)
         Me.Controls.Add(Me.FecnacDateTimePicker)
         Me.Controls.Add(Label5)
-        Me.Controls.Add(Me.SexoTextBox)
         Me.Controls.Add(NumcelLabel)
         Me.Controls.Add(Me.NumcelTextBox)
         Me.Controls.Add(NumtelLabel)
@@ -590,7 +569,6 @@ Partial Class Form1
     Friend WithEvents DNITextBox As TextBox
     Friend WithEvents IdcarreraTextBox As TextBox
     Friend WithEvents FecnacDateTimePicker As DateTimePicker
-    Friend WithEvents SexoTextBox As TextBox
     Friend WithEvents NumcelTextBox As TextBox
     Friend WithEvents NumtelTextBox As TextBox
     Friend WithEvents DireccionTextBox As TextBox
@@ -606,5 +584,4 @@ Partial Class Form1
     Friend WithEvents btnModificar As Button
     Friend WithEvents BtnInsertar As Button
     Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents Label7 As Label
 End Class
